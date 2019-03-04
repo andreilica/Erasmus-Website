@@ -1,0 +1,1140 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html {
+    min-height:100%;
+    min-width: 1200px;
+    width:100%;
+    background:url(../img/background-imager/3.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+html {
+    /* Paul Irish Code*/
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+}
+
+body{
+    width:100%;
+    height:100%;
+}
+.container{
+    width:1200px;
+    min-height:1000px;
+    height:auto;
+    display:block;
+    margin:0 auto;
+    background-color: transparent;
+    -webkit-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
+
+}
+
+.topBar{
+    width:100%;
+    height:100px;
+    display:block;
+    background-color: transparent;
+    position:relative;
+    -webkit-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
+}
+
+.logo{
+    width:330px;
+    height:105px;
+    display:block;
+    background-repeat: no-repeat;
+    background-image: url(../img/logo.png);
+    position:relative;
+    top:5px;
+    left:30px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+border-radius: 5px 5px 5px 5px;
+}
+
+.logo:hover{
+    -moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+-o-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+}
+.title{
+    min-width:430px;
+    min-height:111px ;
+    height:111px;
+    width:auto;
+    display:block;
+    position:absolute;
+    left:375px;
+    top:0px;
+    background-color: transparent;
+    -webkit-border-radius: 5px 5px 5px 5px;
+border-radius: 5px 5px 5px 5px;
+}
+
+.pageImg{
+    width:1200px;
+    height:150px;
+    display:block;
+    background-color:transparent;
+    -webkit-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
+    position: relative;
+
+}
+
+.banner{
+    width:1200px;
+    height:150px;
+    display:block;
+    background-image: url(../img/cock.jpg);
+    position:relative;
+    background-repeat: no-repeat;
+    top:-5px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
+border-bottom:3px;
+}
+
+
+.menu{
+    width:1200px;
+    height:50px;
+    display:block;
+    background-color: #f1e767; /* Old browsers */
+background: -moz-linear-gradient(top,  #f1e767 0%, #feb645 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e767), color-stop(100%,#feb645)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+
+
+    text-align:center;
+    -webkit-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
+margin-bottom: 4px;
+}
+
+
+
+/* aici incepe marea smecherie */
+
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a,
+#cssmenu #menu-button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu:after,
+#cssmenu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#cssmenu #menu-button {
+  display: none;
+}
+#cssmenu {
+  width: auto;
+  z-index:1;
+  border-radius: 5px;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  background-color: #f1e767; /* Old browsers */
+  margin-bottom: 8px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+border-radius: 10px 10px 10px 10px;
+margin-bottom: 4px;
+background: -moz-linear-gradient(top,  #f1e767 0%, #feb645 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e767), color-stop(100%,#feb645)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+}
+#cssmenu.align-center > ul {
+  font-size: 0;
+  text-align: center;
+}
+#cssmenu.align-center ul ul {
+  text-align: left;
+}
+#cssmenu.align-center > ul > li {
+  display: inline-block;
+  float: none;
+}
+#cssmenu.align-right > ul > li {
+  float: right;
+}
+#cssmenu.align-right ul ul {
+  text-align: right;
+}
+#cssmenu > ul > li {
+  float: left;
+}
+
+#partener{
+    cursor:auto;
+}
+#cssmenu > ul > li > a {
+  padding: 20px 25px;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  font-weight: bold;
+  font-size:14px;
+  text-decoration: none;
+  margin-left:50px;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+
+#cssmenu > ul > li > a:hover{
+      text-shadow: 1px 1px 1px #FFFFFF;
+}
+#cssmenu > ul > li:hover > a,
+#cssmenu > ul > li > a:hover,
+#cssmenu > ul > li.active > a {
+  color: black;
+
+}
+#cssmenu > ul > li.has-sub > a {
+  padding-right: 40px;
+}
+#cssmenu ul > li.has-sub > a:after {
+  content: '';
+  position: absolute;
+  right: 5px;
+  top: 17.5px;
+  display: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background-size: 36px 36px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+#cssmenu ul > li.has-sub:hover > a:after {
+  background-position: 0 -18px;
+}
+#cssmenu ul > li.has-sub > a:before {
+  content: '';
+  position: absolute;
+  right: 11px;
+  top: 25.5px;
+  display: none;
+  width: 0;
+  height: 0;
+  border: 3px solid transparent;
+  z-index: 99;
+}
+#cssmenu ul > li.has-sub:hover > a:before {
+}
+#cssmenu ul ul {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  -webkit-transition: top .2s ease, opacity .2s ease;
+  -moz-transition: top .2s ease, opacity .2s ease;
+  -ms-transition: top .2s ease, opacity .2s ease;
+  -o-transition: top .2s ease, opacity .2s ease;
+  transition: top .2s ease, opacity .2s ease;
+}
+#cssmenu > ul > li > ul {
+  top: 91px;
+  padding-top: 8px;
+  border-radius: 5px;
+}
+#cssmenu > ul > li:hover > ul {
+  left: auto;
+  top: 51px;
+  opacity: 1;
+}
+#cssmenu.align-right > ul > li:hover > ul {
+  right: 0;
+}
+#cssmenu ul ul ul {
+  top: 40px;
+}
+#cssmenu ul ul > li:hover > ul {
+  top: 0;
+  left: 178px;
+  padding-left: 10px;
+  opacity: 1;
+}
+#cssmenu.align-right ul ul > li:hover > ul {
+  left: auto;
+  right: 178px;
+  padding-left: 0;
+  padding-right: 10px;
+  opacity: 1;
+}
+#cssmenu ul ul li a {
+  width: 180px;
+  height:50px;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  font-size: 15px;
+  font-weight: 700;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  color: black;
+  margin-left:30px;
+  text-decoration: none;
+  background-color: #f1e767; /* Old browsers */
+background: -moz-linear-gradient(top,  #f1e767 0%, #feb645 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e767), color-stop(100%,#feb645)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+#cssmenu ul ul li:hover > a,
+#cssmenu ul ul li > a:hover,
+#cssmenu ul ul li.active > a {
+  color:black;
+  text-shadow: 1px 1px 1px #FFFFFF;
+}
+#cssmenu ul ul li:first-child > a {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+#cssmenu ul ul li:last-child > a {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#cssmenu ul ul > li.has-sub > a:after {
+  right: 12px;
+  top: 9.5px;
+  background-color: #f1e767; /* Old browsers */
+background: -moz-linear-gradient(top,  #f1e767 0%, #feb645 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e767), color-stop(100%,#feb645)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+  background-size: 36px 36px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+#cssmenu.align-right ul ul > li.has-sub > a:after {
+  right: auto;
+  left: 12px;
+}
+#cssmenu ul ul > li.has-sub:hover > a:after {
+  background-position: 0 -18px;
+}
+#cssmenu ul ul > li.has-sub > a:before {
+  top: 15.5px;
+  right: 16px;
+  border-top-color: transparent;
+}
+#cssmenu.align-right ul ul > li.has-sub > a:before {
+  top: 15.5px;
+  right: auto;
+  left: 16px;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+#cssmenu ul ul > li.has-sub:hover > a:before {
+  border-top-color: transparent;
+}
+#cssmenu.align-right ul ul > li.has-sub:hover > a:before {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}
+@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  #cssmenu {
+    width: 100%;
+  }
+  #cssmenu ul,
+  #cssmenu ul ul,
+  #cssmenu ul ul ul,
+  #cssmenu > ul,
+  #cssmenu.align-center > ul,
+  #cssmenu > ul > li > ul,
+  #cssmenu > ul > li:hover > ul,
+  #cssmenu ul ul li:hover > ul,
+  #cssmenu ul ul ul li:hover > ul,
+  #cssmenu.align-right ul ul,
+  #cssmenu.align-right ul ul li:hover > ul,
+  #cssmenu.align-right ul ul ul li:hover > ul {
+    position: relative;
+    left: 0;
+    right: auto;
+    top: 0;
+    width: 100%;
+    display: none;
+    padding: 0;
+    opacity: 1;
+    text-align: left;
+  }
+  #cssmenu ul li {
+    width: 100%;
+  }
+  #cssmenu > ul > li > a,
+  #cssmenu ul ul li a,
+  #cssmenu ul ul li:first-child > a,
+  #cssmenu ul ul li:last-child > a {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    background: none;
+  }
+  #cssmenu ul li a {
+    padding-left: 12.5px;
+  }
+  #cssmenu ul ul li a {
+    padding: 14px 25px 14px 27.5px;
+  }
+  #cssmenu ul ul ul li a {
+    padding-left: 42.5px;
+  }
+  #cssmenu ul ul ul ul li a {
+    padding-left: 57.5px;
+  }
+  #cssmenu > ul > li.has-sub > a:after,
+  #cssmenu > ul > li.has-sub > a:before,
+  #cssmenu ul ul li.has-sub > a:after,
+  #cssmenu ul ul li.has-sub > a:before {
+    display: none;
+  }
+  #cssmenu #menu-button {
+    position: relative;
+    display: block;
+    padding: 20px;
+    padding-left: 12.5px;
+    cursor: pointer;
+    font-size: 13px;
+    color: black;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  #cssmenu .submenu-button {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 53px;
+    height: 53px;
+    z-index: 10;
+    cursor: pointer;
+  }
+  #cssmenu ul ul .submenu-button {
+    height: 41px;
+  }
+  #cssmenu ul .submenu-button:after,
+  #cssmenu #menu-button:after {
+    content: '';
+    position: absolute;
+    right: 12.5px;
+    top: 12.5px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    border-radius: 15px;
+    background-color: #f1e767; /* Old browsers */
+background: -moz-linear-gradient(top,  #f1e767 0%, #feb645 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e767), color-stop(100%,#feb645)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+    background-size: 56px 56px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    -ms-transition: all 0.1s ease-out;
+    -o-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+  }
+  #cssmenu ul .submenu-button.submenu-opened:after,
+  #cssmenu #menu-button.menu-opened:after {
+    background-position: 0 -28px;
+  }
+  #cssmenu ul ul .submenu-button:after {
+    top: 6.5px;
+  }
+  #cssmenu #menu-button:before,
+  #cssmenu .submenu-button:before {
+    content: '';
+    position: absolute;
+    right: 22.5px;
+    top: 25.5px;
+    display: block;
+    width: 0;
+    height: 0;
+    z-index: 99;
+  }
+  #cssmenu ul ul .submenu-button:before {
+    top: 19.5px;
+  }
+  #cssmenu #menu-button.menu-opened:before,
+  #cssmenu .submenu-button.submenu-opened:before {
+
+  }
+}
+
+
+
+
+
+
+
+/* aici incepe textul MEU */
+
+
+
+
+.acasa{
+    text-shadow: 1px 1px 1px #FFFFFF;
+    -moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+-o-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+.buttons:hover{
+    text-shadow: 1px 1px 1px #FFFFFF;
+    -moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+-o-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1);
+}
+
+.content{
+	width: 1200px;
+	height: 730px;
+	display: inline-block;
+	background-color: transparent;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.column2{
+	min-width: 1200px;
+	width: 1200px;
+	/* [disabled]min-height: 725px; */
+	height: 725px;
+	display: block;
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top, #FFFFFF 0%, #F1E767 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top, #FFFFFF 0%, #F1E767 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top, #FFFFFF 0%, #F1E767 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #F1E767));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #F1E767 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom, #FFFFFF 0%, #F1E767 100%);
+	float: left;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	text-align: justify;
+}
+
+.CSSTableGenerator {
+  margin:0px;padding:0px;
+  width:80%;
+  margin:0 auto;
+  margin-top:40px;
+  box-shadow: 10px 10px 5px #888888;
+  border:1px solid #000000;
+  
+  -moz-border-radius-bottomleft:14px;
+  -webkit-border-bottom-left-radius:14px;
+  border-bottom-left-radius:14px;
+  
+  -moz-border-radius-bottomright:14px;
+  -webkit-border-bottom-right-radius:14px;
+  border-bottom-right-radius:14px;
+  
+  -moz-border-radius-topright:14px;
+  -webkit-border-top-right-radius:14px;
+  border-top-right-radius:14px;
+  
+  -moz-border-radius-topleft:14px;
+  -webkit-border-top-left-radius:14px;
+  border-top-left-radius:14px;
+}.CSSTableGenerator table{
+    border-collapse: collapse;
+        border-spacing: 0;
+  width:100%;
+  height:100%;
+  margin:0px;padding:0px;
+}.CSSTableGenerator tr:last-child td:last-child {
+  -moz-border-radius-bottomright:14px;
+  -webkit-border-bottom-right-radius:14px;
+  border-bottom-right-radius:14px;
+}
+.CSSTableGenerator table tr:first-child td:first-child {
+  -moz-border-radius-topleft:14px;
+  -webkit-border-top-left-radius:14px;
+  border-top-left-radius:14px;
+}
+.CSSTableGenerator table tr:first-child td:last-child {
+  -moz-border-radius-topright:14px;
+  -webkit-border-top-right-radius:14px;
+  border-top-right-radius:14px;
+}.CSSTableGenerator tr:last-child td:first-child{
+  -moz-border-radius-bottomleft:14px;
+  -webkit-border-bottom-left-radius:14px;
+  border-bottom-left-radius:14px;
+}.CSSTableGenerator tr:hover td{
+  background-color:#ffffff;
+    
+
+}
+.CSSTableGenerator td{
+  vertical-align:middle;
+  
+  background-color:#e5e5e5;
+
+  border:1px solid #000000;
+  border-width:0px 1px 1px 0px;
+  text-align:center;
+  padding:7px;
+  font-size:10px;
+  font-family:Arial;
+  font-weight:normal;
+  color:#000000;
+}.CSSTableGenerator tr:last-child td{
+  border-width:0px 1px 0px 0px;
+}.CSSTableGenerator tr td:last-child{
+  border-width:0px 0px 1px 0px;
+}.CSSTableGenerator tr:last-child td:last-child{
+  border-width:0px 0px 0px 0px;
+}
+.CSSTableGenerator tr:first-child td{
+    background:-o-linear-gradient(bottom, #4c4c4c 5%, #000000 100%);  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4c4c4c), color-stop(1, #000000) );
+  background:-moz-linear-gradient( center top, #4c4c4c 5%, #000000 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c4c4c", endColorstr="#000000");  background: -o-linear-gradient(top,#4c4c4c,000000);
+
+  background-color:#4c4c4c;
+  border:0px solid #000000;
+  text-align:center;
+  border-width:0px 0px 1px 1px;
+  font-size:14px;
+  font-family:Arial;
+  font-weight:bold;
+  color:#ffffff;
+}
+.CSSTableGenerator tr:first-child:hover td{
+  background:-o-linear-gradient(bottom, #4c4c4c 5%, #000000 100%);  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4c4c4c), color-stop(1, #000000) );
+  background:-moz-linear-gradient( center top, #4c4c4c 5%, #000000 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#4c4c4c", endColorstr="#000000");  background: -o-linear-gradient(top,#4c4c4c,000000);
+
+  background-color:#4c4c4c;
+}
+.CSSTableGenerator tr:first-child td:first-child{
+  border-width:0px 0px 1px 0px;
+}
+.CSSTableGenerator tr:first-child td:last-child{
+  border-width:0px 0px 1px 1px;
+}
+.footer{
+	width: 100%;
+	height: 100px;
+	display: inline-block;
+
+    background-color: #f1e767; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f1e767 0%, #feb645 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1e767), color-stop(100%,#feb645)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f1e767 0%,#feb645 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f1e767 0%,#feb645 100%); /* W3C */
+
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#feb645',GradientType=0 ); /* IE6-9 */
+;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border-radius: 10px 10px 10px 10px;
+	text-align: center;
+	margin-top: 4px;
+	margin: 0 auto;
+
+}
+
+.footerText{
+    min-width:300px;
+    width:auto;
+    height:50px;
+    display:inline-block;
+    background-color: transparent;
+    margin-top: 25px;
+    font-size:18px;
+    font-weight:bold;
+
+}
+
+p{
+    text-indent: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: justify;
+}
+
+h1{
+   
+    font-size: 25px;
+    font-family: 'Mark Script', cursive;
+}
+
+
+h2{
+    font-family: 'Mark Script', cursive;
+}
+
+h4{
+	margin:0;
+}
+a{
+    font-family: 'Mark Script', cursive;
+    font-size: 20px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/* Image */
+
+#foto1{
+    background-image:url(../img/galerie/1.jpg);
+  }
+
+  #foto2{
+    background-image:url(../img/galerie/2.jpg);
+  }
+
+  #foto3{
+    background-image:url(../img/galerie/3.jpg);
+  }
+
+  #foto4{
+    background-image:url(../img/galerie/1.jpg);
+  }
+
+  #foto5{
+    background-image:url(../img/galerie/2.jpg);
+  }
+
+  #foto6{
+    background-image:url(../img/galerie/3.jpg);
+  }
+	.image{
+  width:360px;
+  height:270px;
+	border-radius: 5px;
+	border: 0;
+	display:inline-block;
+	position: relative;
+	float:left;
+	margin-left:30px;
+  background-size: cover;
+  cursor: pointer;
+  margin-bottom:15px;
+  margin-top: 15px;
+	}
+		.image.fit {
+	max-width: 30% !important;
+	height: 270px;
+	display: block;
+		}
+
+			.image.fit img {
+				width: 100%;
+			}
+	
+  .overlay1 {
+  width: 360px;
+  height: 270px;
+  background: #eee;
+  /*display: none;*/
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+}
+
+  .image:hover .overlay1 {
+    /*display: inline;*/
+    background: #eee;
+    opacity:0.75;
+}
+
+.esb{
+  width:250px;
+  height:78.75px;
+  margin:0 auto;
+  display:block;
+  background-image: url(../img/logoesb.png);
+  background-size: cover;
+  margin-top: 90px;
+}
+
+.mb{
+  width:130px;
+  height:130px;
+  margin:0 auto;
+  display:block;
+  background-image: url(../img/mb.png);
+  background-size: cover;
+  margin-top: 50px;
+}
+
+.pdf{
+  width:100px;
+  height:100px;
+  display: block;
+  background-image: url(../img/pdf.png);
+  background-size: cover;
+  float:left;
+  margin-right: 20px;
+  
+}
+
+.pdfs{
+  width:auto;
+  height:120px;
+  display: block;
+  text-decoration: none;
+  color:black;
+  margin-left: 220px;
+  margin-bottom:20px;
+}
+
+.textpdf{
+  width: auto;
+  height:100px;
+  display: block;
+  text-decoration: none;
+  color:black;
+  line-height: 5;
+  vertical-align: middle;
+}
